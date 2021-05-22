@@ -17,7 +17,7 @@ const App = () => {
         let fname = firstName.toLowerCase();
         let sname = secondName.toLowerCase();
         if (!fname || !sname) {
-            setResult(flamesArray[6]);
+            setResult(flamesArray[7]);
             return;
         }
         let arr1 = fname.split("");
@@ -31,13 +31,15 @@ const App = () => {
             }
         }
         let resultString = arr1.concat(arr2).toString().replaceAll("0", "").replaceAll(/,/gi, "");
-        let finalResult = flamesArray[Math.floor(resultString.length / 6)];
-
+        console.log(resultString);
+        let finalResult = flamesArray[Math.floor(resultString.length % 6)];
+        console.log(finalResult);
         setResult(finalResult);
     };
     const clearFlame = () => {
         setFirstName("");
         setSecondName("");
+        setResult("");
     };
     return (
         <div id="main">
