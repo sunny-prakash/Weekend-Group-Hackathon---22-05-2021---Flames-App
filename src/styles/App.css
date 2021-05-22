@@ -1,12 +1,19 @@
 h1 {
     color: #27aedb;
     text-align: center;
-    }
-    
+}
 
-button{
+button {
     color: #27aedb;
     text-align: center;
     justify-content: center;
+    align-items: center;
+}
+
+#main {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
 }
