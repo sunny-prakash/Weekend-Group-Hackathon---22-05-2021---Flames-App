@@ -17,7 +17,7 @@ const App = () => {
         let fname = firstName.toLowerCase();
         let sname = secondName.toLowerCase();
         if (!fname || !sname) {
-            setResult(flamesArray[7]);
+            setResult(flamesArray[6]);
             return;
         }
         let arr1 = fname.split("");
